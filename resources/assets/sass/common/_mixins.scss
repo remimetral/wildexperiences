@@ -1,0 +1,63 @@
+
+//
+//  =========================================================
+//  Mixin
+//  =========================================================
+//
+
+@mixin force_hardware_acceleration() {
+	transform: translateZ(0);
+	perspective: 1000;
+	backface-visibility: hidden;
+	transform: translate3d(0, 0, 0);
+}
+
+@mixin background_cover() {
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	@include force_hardware_acceleration();
+	transform: scale(1, 1);
+}
+
+@mixin cover_text() {
+	position: absolute;
+	right: 0px;
+	left: 0;
+	height: 100%;
+	background: rgba(#fff, .7);
+	@media (min-width: $screen-md-min) {
+		left: 50%;
+	}
+}
+
+@mixin container_text() {
+	padding: 0 15px;
+	@media (min-width: $screen-md-min) {
+		padding: 0 0 0 25px;
+	}
+}
+
+@mixin box-sizing($border) {
+  -webkit-box-sizing: $border;
+  	 -moz-box-sizing: $border;
+  	  -ms-box-sizing: $border;
+  	   -o-box-sizing: $border;
+  		  box-sizing: $border;
+}
+
+@mixin user-select($select) {
+  -webkit-touch-callout: $select;
+  	-webkit-user-select: $select;
+  	   -moz-user-select: $select;
+  		-ms-user-select: $select;
+  			user-select: $select;
+}
+
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  	 -moz-transition: $transition;
+  	  -ms-transition: $transition;
+  	   -o-transition: $transition;
+  		  transition: $transition;
+}

@@ -1,0 +1,37 @@
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* fonts */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+@font-face {
+  font-family: 'HaasGrotDisp15XXThin';
+  src: url('../fonts/neuehaasgrotdisp-15xxthin.eot');
+  src: url('../fonts/neuehaasgrotdisp-15xxthin.eot') format('embedded-opentype'),
+       url('../fonts/neuehaasgrotdisp-15xxthin.woff') format('woff'),
+       url('../fonts/neuehaasgrotdisp-15xxthin.ttf') format('truetype'),
+       url('../fonts/neuehaasgrotdisp-15xxthin.svg#HaasGrotDisp15XXThin') format('svg');
+}
+
+@font-face {
+    font-family: 'HaasGrotDisp25XThin';
+    src: url('../fonts/neuehaasgrotdisp-25xthin.eot');
+    src: url('../fonts/neuehaasgrotdisp-25xthin.eot') format('embedded-opentype'),
+         url('../fonts/neuehaasgrotdisp-25xthin.woff') format('woff'),
+         url('../fonts/neuehaasgrotdisp-25xthin.ttf') format('truetype'),
+         url('../fonts/neuehaasgrotdisp-25xthin.svg#HaasGrotDisp25XThin') format('svg');
+}
+
+@font-face {
+  font-family: 'NeueHaasGrotDisp-55Roman';
+  src: url('../fonts/NeueHaasGrotDisp-55Roman.eot');
+  src: local('☺'), url('../fonts/NeueHaasGrotDisp-55Roman.woff') format('woff'), url('../fonts/NeueHaasGrotDisp-55Roman.ttf') format('truetype'), url('../fonts/NeueHaasGrotDisp-55Roman.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueHaasGrotDisp-75Bold';
+  src: url('../fonts/NeueHaasGrotDisp-75Bold.eot');
+  src: local('☺'), url('../fonts/NeueHaasGrotDisp-75Bold.woff') format('woff'), url('../fonts/NeueHaasGrotDisp-75Bold.ttf') format('truetype'), url('../fonts/NeueHaasGrotDisp-75Bold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

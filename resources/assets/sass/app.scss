@@ -1,0 +1,47 @@
+
+// Fonts
+//@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Bulma
+// @import "~bulma";
+// @import "~bulma-calendar";
+
+// Buefy
+// @import '~buefy/lib/buefy';
+
+// Common
+@import "common/variables";
+@import "common/settings";
+@import "common/mixins";
+@import "common/layout";
+//@import "common/fonts";
+
+// Modules
+@import "components/carousel";
+@import "components/navbar";
+@import "components/grid";
+
+// Pages
+@import "pages/auth";
+@import "pages/home";
+@import "pages/about";
+
+.calendar {
+    .calendar-date {
+        text-transform: capitalize;
+    }
+}
+
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+    transition: all .4s ease;
+}
+
+.slide-fade-enter,
+.slide-fade-leave-to {
+    transform: scale(.9);
+    opacity: 0;
+}
