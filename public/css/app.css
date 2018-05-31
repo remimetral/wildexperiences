@@ -10500,11 +10500,6 @@ a:hover {
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
-  padding: 0 20px 0 0;
-}
-
-#wrap .pt-perspective .pt-page .content_scroll .content .container {
-  padding: 60px 20px 40px 20px;
 }
 
 #wrap .no-js body {
@@ -10520,8 +10515,8 @@ a:hover {
   position: fixed;
   width: 100%;
   height: 100%;
-  -webkit-transition: opacity 0.8s;
-  transition: opacity 0.8s;
+  -webkit-transition: opacity 1.2s;
+  transition: opacity 1.2s;
 }
 
 .carousel .carousel-inner .active {
@@ -10572,23 +10567,6 @@ a:hover {
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
   background-image: url(/images/carousel_02.jpg?d41c28a99a4ec726151412c9123ee40d);
-}
-
-.carousel-item:nth-child(3) {
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  -webkit-perspective: 1000;
-          perspective: 1000;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
-  background-image: url(/images/carousel_03.jpg?a1586423e5e308c179f31d46a3852806);
 }
 
 .navbar {
@@ -10664,11 +10642,39 @@ a:hover {
 .container_page.login .content .row,
 .container_page.password .content .row,
 .container_page.register .content .row {
-  padding: 20px;
+  width: auto;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+.container_page.login .content .row .columns,
+.container_page.password .content .row .columns,
+.container_page.register .content .row .columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+.container_page.login .content .row .columns .panel-heading,
+.container_page.password .content .row .columns .panel-heading,
+.container_page.register .content .row .columns .panel-heading {
+  font-weight: bold;
+  padding: 15px;
 }
 
 .container_page.home .bg_page {
-  background: #fff;
+  background: #000;
 }
 
 .container_page.home .bg_page .trame {
@@ -10681,7 +10687,7 @@ a:hover {
 }
 
 .container_page.home .content {
-  color: #000;
+  color: #fff;
 }
 
 .container_page.home .content .row {
@@ -10697,7 +10703,26 @@ a:hover {
 }
 
 .container_page.about .content .row {
-  padding: 20px;
+  width: auto;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+.container_page.about .content .row .columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
 }
 
 .calendar .calendar-date {

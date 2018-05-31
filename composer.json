@@ -55,7 +55,8 @@
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php vendor/bin/homestead make",
             "@php artisan package:discover",
-            "@php artisan migrate"
+            "@php artisan migrate",
+            "@php artisan db:seed"
         ]
     },
     "config": {

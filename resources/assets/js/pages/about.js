@@ -58,12 +58,13 @@ export default class About {
     }
 
     animationIn() {
-        //TweenMax.from(this.page.find('.bg_page'), 1, { alpha: 0, ease: Linear.easeOut });
-        TweenMax.from(this.page.find('.container_page.about'), 1, { scale: .8, ease: Expo.easeOut, delay: deeplink.delayBeforeAnimIn });
+        TweenMax.from(this.page.find('.bg_page'), 1, { alpha: 0, ease: Linear.easeOut });
+        TweenMax.from(this.page.find('.content'), 1, { x: -100, alpha: 0, ease: Expo.easeOut, delay: deeplink.delayBeforeAnimIn });
         deeplink.reInitAnimation(deeplink.delayReInit);
     }
 
     animationOut() {
-        TweenMax.to(this.page.find('.container_page.about'), 1, { scale: .8, ease: Expo.easeOut });
+        TweenMax.to(this.page.find('.bg_page'), 1, { alpha: 0, ease: Linear.easeOut });
+        TweenMax.to(this.page.find('.content'), 1, { x: -100, alpha: 0, ease: Expo.easeOut });
     }
 }

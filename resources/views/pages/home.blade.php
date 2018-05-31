@@ -13,14 +13,12 @@
 
 	<div class="container_page {{ $page_id }}">
 		<div class="bg_page">
-			<!--@include('components/carousel/bootstrap')
-			<div class="trame"></div>-->
+			@include('components/carousel/bootstrap')
+			<div class="trame"></div>
 		</div>
 		<div class="content_scroll">
 			<div class="content">
-				<div class="container" id="app">
-					<grid></grid>
-				</div>
+
 			</div>
 		</div>
 	</div>

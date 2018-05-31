@@ -9,6 +9,7 @@ export default class Home {
     constructor() {
         this.variables();
         this.init();
+        this.animationIn();
     }
 
     /**
@@ -16,9 +17,9 @@ export default class Home {
      */
     variables() {
         this.id = 'home';
-        this.page = null;
+        this.page = deeplink.$pages.eq(deeplink.current);
+        this.current = this.page.find('.page_menu_id').val();
         this.$document = $(document);
-        this.current = deeplink.$pages.eq(deeplink.current).find('.page_menu_id').val();
     }
 
     /**
@@ -26,9 +27,9 @@ export default class Home {
      */
     init() {
         this.$document.on('page_change', this.check.bind(this));
-        if (this.id == this.current) {
+        /*if (this.id == this.current) {
             this.app = new Vue({el: '#app'});
-        }
+        }*/
     }
 
     /**
@@ -45,6 +46,7 @@ export default class Home {
                 break;
             case 'animation_in':
                 this.animationIn();
+                deeplink.reInitAnimation(deeplink.delayReInit);
                 break;
             case 'animation_out':
                 this.animationOut();
@@ -53,17 +55,15 @@ export default class Home {
     }
 
     reInit() {
-        this.app = new Vue({el: '#app'});
+        //this.app = new Vue({el: '#app'});
         this.$document.title = this.page.find('.page_title').val();
     }
 
     animationIn() {
-        //TweenMax.from(this.page.find('.bg_page'), 1, { alpha: 0, ease: Linear.easeOut });
-        TweenMax.from(this.page.find('.container_page.home'), 2, { y: '100vh', alpha: 0, ease: Expo.easeOut, delay: deeplink.delayBeforeAnimIn });
-        deeplink.reInitAnimation(deeplink.delayReInit);
+        TweenMax.from(this.page.find('.container_page'), 2, { scale: 1.1, alpha: 0, ease: Expo.easeOut, delay: deeplink.delayBeforeAnimIn });
     }
 
     animationOut() {
-        TweenMax.to(this.page.find('.container_page.home'), 2, { y: '100vh', alpha: 0, ease: Expo.easeOut });
+        TweenMax.to(this.page.find('.container_page'), 2, { alpha: 0, ease: Expo.easeOut });
     }
 }
