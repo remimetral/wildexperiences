@@ -18,6 +18,11 @@ return [
             'title' => '[0,1] Product|[2,*] Products',
             'link'  => 'View all products',
             'text'  => 'You have :count :string in your database. Click on button below to view all products.',
+        ],
+        'pack' => [
+            'title' => '[0,1] Dog|[2,*] Dogs',
+            'link'  => 'View all dogs',
+            'text'  => 'You have :count :string in your database. Click on button below to view all dogs.',
         ]
     ]
 

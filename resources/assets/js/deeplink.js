@@ -1,6 +1,7 @@
 
 import $ from 'jquery';
 import TweenMax from "gsap";
+import { TextPlugin } from 'gsap/TextPlugin';
 
 export default class Deeplink {
     /**
@@ -20,6 +21,7 @@ export default class Deeplink {
         this.$pages             = this.$main.children('div.pt-page');
         this.pagesCount         = this.$pages.length;
         this.$page              = '';
+        this.$previous          = '';
         this.current            = 0;
         this.zindex             = 1;
         this.$nextPage          = '';
@@ -148,7 +150,7 @@ export default class Deeplink {
         this.$currPage = this.$pages.eq(this.current);
         ( this.current < this.pagesCount - 1 ) ? ++this.current : this.current = 0;
         this.$nextPage = this.$pages.eq(this.current).addClass('pt-page-current');
-
+        this.$previous = this.$currPage.find('.page_menu_id').val();
         this.$nextPage.css({ zIndex: this.zindex++ });
 
         TweenMax.to(this.$nextPage, .2, {opacity: 1});

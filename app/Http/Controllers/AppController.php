@@ -57,14 +57,50 @@ class AppController extends Controller {
 	}
 
 	/**
-	 * Show the application about to the user.
+	 * Show the application activities to the user.
 	 *
 	 * @return Response
 	 */
-	public function about()
+	public function activities()
 	{
 		$this->setLocale();
-		return view('pages.about', ['page_id' => 'about']);
+		$winter = App\Page::whereSlug('winter-activities')->firstOrFail();
+		$summer = App\Page::whereSlug('summer-activities')->firstOrFail();
+		return view('pages.activities', ['page_id' => 'activities'], compact('winter', 'summer'));
+	}
+
+	/**
+	 * Show the application pack to the user.
+	 *
+	 * @return Response
+	 */
+	public function pack()
+	{
+		$this->setLocale();
+		$posts = App\Post::all();
+		return view('pages.pack', ['page_id' => 'pack'], compact('posts'));
+	}
+
+	/**
+	 * Show the application calendar to the user.
+	 *
+	 * @return Response
+	 */
+	public function calendar()
+	{
+		$this->setLocale();
+		return view('pages.calendar', ['page_id' => 'calendar']);
+	}
+
+	/**
+	 * Show the application location to the user.
+	 *
+	 * @return Response
+	 */
+	public function location()
+	{
+		$this->setLocale();
+		return view('pages.location', ['page_id' => 'location']);
 	}
 
 	/**

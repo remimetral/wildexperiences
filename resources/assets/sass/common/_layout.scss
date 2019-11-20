@@ -38,9 +38,10 @@ a {
 
 #wrap {
     height: 100%;
-    width: 100%;
+    width: calc(100% - 60px);
     position: absolute;
     overflow: hidden;
+    left: 60px;
 
     .pt-perspective {
         position: relative;

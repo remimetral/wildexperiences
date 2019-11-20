@@ -15,9 +15,22 @@
 		<div class="bg_page">
 			@include('components/carousel/bootstrap')
 			<div class="trame"></div>
+			<div class="gradient"></div>
 		</div>
 		<div class="content_scroll">
 			<div class="content">
+
+				<div class="row">
+					<div class="small-12 columns">
+						<div class="logo"></div>
+						<div class="text">
+							<div class="caption">Venez découvrir l'expérience</div>
+							<div class="title">Chien de Traîneau</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="crevoux"></div>
 
 			</div>
 		</div>

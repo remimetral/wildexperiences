@@ -1,7 +1,7 @@
 
 //
 //  =========================================================
-//  Mixin
+//  Mixins
 //  =========================================================
 //
 
@@ -36,6 +36,14 @@
 	@media (min-width: $screen-md-min) {
 		padding: 0 0 0 25px;
 	}
+}
+
+@mixin filter($type) {
+  -webkit-filter: $type;
+	 -moz-filter: $type;
+	  -ms-filter: $type;
+	   -o-filter: $type;
+		  filter: $type;
 }
 
 @mixin box-sizing($border) {

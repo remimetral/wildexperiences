@@ -15,11 +15,14 @@ return [
 
 	'description' => 'Description',
 	'title' => [
-        'home' 		=> 'Accueil',
-        'about'   	=> 'À Propos',
-        'login'  	=> 'Login',
-		'reset'		=> 'Reset',
-        'register'	=> 'Register'
+        'home' 			=> 'Accueil',
+        'activities'   	=> 'Activités',
+		'pack'   		=> 'Meute',
+		'calendar'   	=> 'Calendrier',
+		'location'   	=> 'Localisation',
+        'login'  		=> 'Login',
+		'reset'			=> 'Reset',
+        'register'		=> 'Register'
     ]
 
 ];

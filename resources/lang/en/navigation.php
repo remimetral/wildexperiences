@@ -14,11 +14,14 @@ return [
 	*/
 
 	'title' => [
-        'home' 		=> 'Home',
-        'about'   	=> 'About',
-        'login'  	=> 'Login',
-        'register'	=> 'Register',
-		'admin'  	=> 'Admin',
+        'home' 			=> 'Home',
+        'activities'   	=> 'Activities',
+		'pack'   		=> 'Pack',
+		'calendar'   	=> 'Calendar',
+		'location'   	=> 'Location',
+        'login'  		=> 'Login',
+        'register'		=> 'Register',
+		'admin'  		=> 'Admin',
     ]
 
 ];

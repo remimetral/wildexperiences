@@ -15,9 +15,11 @@
 // Common
 @import "common/variables";
 @import "common/settings";
+@import "common/functions";
 @import "common/mixins";
 @import "common/layout";
-//@import "common/fonts";
+@import "common/icons";
+@import "common/fonts";
 
 // Modules
 @import "components/carousel";
@@ -27,7 +29,10 @@
 // Pages
 @import "pages/auth";
 @import "pages/home";
-@import "pages/about";
+@import "pages/activities";
+@import "pages/pack";
+@import "pages/calendar";
+@import "pages/location";
 
 .calendar {
     .calendar-date {

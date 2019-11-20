@@ -11,7 +11,9 @@
 	<title>@yield('title')</title>
 
 	<!-- Style -->
+	<!--<link href="{{ asset('vendor/tcg/voyager/assets/css/app.css') }}" rel="stylesheet" type="text/css">-->
 	<link href="{{ mix('css/app.css') }}" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 	<!-- Fonts -->
 	<!--<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>-->
@@ -25,7 +27,7 @@
 </head>
 <body>
 	<!-- Navigation -->
-	{{ menu('main', 'components.navbar.bootstrap') }}
+	{{ menu('main', 'components.navbar.sidebar') }}
 
 	<div id="wrap">
 		<div id="pt-main" class="pt-perspective">
