@@ -15,5 +15,4 @@ mix.js('resources/assets/js/app.js', 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css')
    .copyDirectory('resources/assets/img', 'public/images')
    .copyDirectory('resources/assets/fonts', 'public/fonts')
-   .copyDirectory('resources/assets/videos', 'public/videos')
    .browserSync('wildexperiences.test');

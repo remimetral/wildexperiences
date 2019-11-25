@@ -17,6 +17,15 @@
 					</a>
 				</li>
 			@endforeach
+			@if ($lang == 'en')
+				<li class="nav-item lang">
+					<a class="nav-link lang" href="{{ route('home-fr') }}">FR</a>
+				</li>
+			@else
+				<li class="nav-item lang">
+					<a class="nav-link lang" href="{{ route('home-en') }}">EN</a>
+				</li>
+			@endif
 		</ul>
 	</nav>
 </div>

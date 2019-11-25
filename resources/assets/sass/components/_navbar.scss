@@ -18,10 +18,11 @@
 
 .side-menu {
     //background-color: rgba(255, 255, 255, .5);
+    background: rgba(173, 216, 230, .6);
     overflow-y: auto;
     z-index: 9999;
     position: fixed;
-    width: 60px;
+    width: 80px;
     height: 100%;
     -webkit-transition: width 250ms;
     transition: width 250ms;
@@ -37,22 +38,22 @@
 
         .navbar-header {
             width: 100%;
-            height: 60px;
+            height: 80px;
 
             .navbar-brand {
-                width: 250px;
+                width: 280px;
                 height: 100%;
 
-                line-height: 65px;
+                line-height: 85px;
                 overflow: hidden;
                 padding: 0;
 
                 .logo {
-                    width: 60px;
-                    height: 60px;
+                    width: 80px;
+                    height: 80px;
                     @include background_cover();
                     background-image: url(../img/logo.png);
-                    background-size: 50px 50px;
+                    background-size: 70px 70px;
                     text-align: center;
                     display: block;
                     float: left;
@@ -72,8 +73,8 @@
             .navbar-expand-toggle {
                 position: absolute;
                 right: 0;
-                width: 50px;
-                height: 50px;
+                width: 70px;
+                height: 70px;
                 background-color: transparent;
                 border: 0;
                 -moz-transition: all 0.25s linear;
@@ -91,18 +92,18 @@
 
         a {
             width: auto;
-            height: 60px;
+            height: 80px;
             font-size: 15px;
             font-family: 'Open Sans', sans-serif;
             padding: 0 10px 0 10px;
-            line-height: 60px;
+            line-height: 80px;
             display: block;
             white-space: nowrap;
 
             .icon {
-                width: 40px;
+                width: 60px;
                 height: auto;
-                font-size: 2em;
+                font-size: 2.5em;
                 text-align: center;
                 display: inline-block;
                 margin-left: 0;
@@ -110,7 +111,7 @@
 
             .title {
                 width: 0;
-                height: 60px;
+                height: 80px;
                 font-weight: 100;
                 white-space: nowrap;
                 position: absolute;
@@ -125,6 +126,8 @@
         .active { .title { background: rgba(#fff, .4); } }
     }
 
+    .navbar-nav li.lang { position: absolute; top: calc(100vh - 80px); text-align: center; }
+
     .navbar-nav li.dropdown {
         border: 0;
         margin-bottom: 0;
@@ -132,8 +135,8 @@
         box-shadow: none;
 
         ul li a {
-            height: 44px;
-            line-height: 44px;
+            height: 64px;
+            line-height: 64px;
             vertical-align: middle;
             padding: 0 1.2em;
         }
@@ -151,7 +154,7 @@
 }
 
 .side-menu:hover {
-    width: 250px;
+    width: 280px;
 
     .navbar {
         //background: rgba(255, 255, 255, .9);
@@ -162,7 +165,7 @@
     }
 
     .navbar-nav li a .title {
-        width: 192px;
+        width: 200px;
         display: inline-block;
     }
 
@@ -187,6 +190,6 @@
 
 @media(max-width:768px) {
     .side-menu:hover {
-        width: 60px;
+        width: 80px;
     }
 }

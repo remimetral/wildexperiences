@@ -10507,10 +10507,10 @@ a:hover {
 
 #wrap {
   height: 100%;
-  width: calc(100% - 60px);
+  width: calc(100% - 80px);
   position: absolute;
   overflow: hidden;
-  left: 60px;
+  left: 80px;
 }
 
 #wrap .pt-perspective {
@@ -10664,7 +10664,7 @@ a:hover {
           transform: translate3d(0, 0, 0);
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
-  background-image: url(/images/carousel_01.jpg?a37368420514c28a49844146243f84d8);
+  background-image: url(/images/carousel_01.jpg?228d2389b987c80c85b030215d4cd82e);
 }
 
 .carousel-item:nth-child(2) {
@@ -10681,7 +10681,7 @@ a:hover {
           transform: translate3d(0, 0, 0);
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
-  background-image: url(/images/carousel_02.jpg?b0a009895387c5a307a8de0026fd095d);
+  background-image: url(/images/carousel_02.jpg?897d4d297e129efd1dbeabdc0fed2d80);
 }
 
 .carousel-item:nth-child(3) {
@@ -10698,7 +10698,7 @@ a:hover {
           transform: translate3d(0, 0, 0);
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
-  background-image: url(/images/carousel_03.jpg?717036d895ac07e8a3570b0e1df54f62);
+  background-image: url(/images/carousel_03.jpg?de676c1b620906be406846f77df90cb2);
 }
 
 .sidebar-inverse {
@@ -10712,10 +10712,11 @@ a:hover {
 }
 
 .side-menu {
+  background: rgba(173, 216, 230, 0.6);
   overflow-y: auto;
   z-index: 9999;
   position: fixed;
-  width: 60px;
+  width: 80px;
   height: 100%;
   -webkit-transition: width 250ms;
   transition: width 250ms;
@@ -10732,20 +10733,20 @@ a:hover {
 
 .side-menu .navbar .navbar-header {
   width: 100%;
-  height: 60px;
+  height: 80px;
 }
 
 .side-menu .navbar .navbar-header .navbar-brand {
-  width: 250px;
+  width: 280px;
   height: 100%;
-  line-height: 65px;
+  line-height: 85px;
   overflow: hidden;
   padding: 0;
 }
 
 .side-menu .navbar .navbar-header .navbar-brand .logo {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -10759,8 +10760,8 @@ a:hover {
           transform: translate3d(0, 0, 0);
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
-  background-image: url(/images/logo.png?9b6e41dc7c0ce799d5d7a70a3ac20e49);
-  background-size: 50px 50px;
+  background-image: url(/images/logo.png?b3f813496d136611fb1c75f9ab24cf70);
+  background-size: 70px 70px;
   text-align: center;
   display: block;
   float: left;
@@ -10779,8 +10780,8 @@ a:hover {
 .side-menu .navbar .navbar-header .navbar-expand-toggle {
   position: absolute;
   right: 0;
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   background-color: transparent;
   border: 0;
   -webkit-transition: all 0.25s linear;
@@ -10796,19 +10797,19 @@ a:hover {
 
 .side-menu .navbar-nav li a {
   width: auto;
-  height: 60px;
+  height: 80px;
   font-size: 15px;
   font-family: 'Open Sans', sans-serif;
   padding: 0 10px 0 10px;
-  line-height: 60px;
+  line-height: 80px;
   display: block;
   white-space: nowrap;
 }
 
 .side-menu .navbar-nav li a .icon {
-  width: 40px;
+  width: 60px;
   height: auto;
-  font-size: 2em;
+  font-size: 2.5em;
   text-align: center;
   display: inline-block;
   margin-left: 0;
@@ -10816,7 +10817,7 @@ a:hover {
 
 .side-menu .navbar-nav li a .title {
   width: 0;
-  height: 60px;
+  height: 80px;
   font-weight: 100;
   white-space: nowrap;
   position: absolute;
@@ -10833,6 +10834,12 @@ a:hover {
   background: rgba(255, 255, 255, 0.4);
 }
 
+.side-menu .navbar-nav li.lang {
+  position: absolute;
+  top: calc(100vh - 80px);
+  text-align: center;
+}
+
 .side-menu .navbar-nav li.dropdown {
   border: 0;
   margin-bottom: 0;
@@ -10842,8 +10849,8 @@ a:hover {
 }
 
 .side-menu .navbar-nav li.dropdown ul li a {
-  height: 44px;
-  line-height: 44px;
+  height: 64px;
+  line-height: 64px;
   vertical-align: middle;
   padding: 0 1.2em;
 }
@@ -10859,7 +10866,7 @@ a:hover {
 }
 
 .side-menu:hover {
-  width: 250px;
+  width: 280px;
 }
 
 .side-menu:hover .navbar-header .navbar-brand .title {
@@ -10867,7 +10874,7 @@ a:hover {
 }
 
 .side-menu:hover .navbar-nav li a .title {
-  width: 192px;
+  width: 200px;
   display: inline-block;
 }
 
@@ -10891,7 +10898,7 @@ a:hover {
 
 @media (max-width: 768px) {
   .side-menu:hover {
-    width: 60px;
+    width: 80px;
   }
 }
 
