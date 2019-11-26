@@ -35,25 +35,27 @@
 		.row {
 			display: block;
 			position: absolute;
-			transform: translate(-40%, -50%);
-			//margin: 0 auto;
-			left: 50%;
-			top: 40%;
+			transform: translate(-50%, -100%);
+			left: 50%; top: 50%;
 
 			.columns {
 				.logo {
-					width: get-vw(80px);
-					height: get-vw(80px);
-					@include background_cover();
-					background-image: url(../img/logo-white.png);
-					//transform: translateX(-50%);
+					width: 160px;
+					height: 160px;
+					background-image: url(../img/trame-bis.png);
+					background-repeat: repeat;
+					margin: -170px 0 0 -80px;
 					position: absolute;
-					//display: block;
-					//top: -100%;
-					//bottom: 10px;
-					//right: 10px;
-					left: get-vw(-80px);
-					top: get-vw(8px);
+					left: 50%;
+
+					.image {
+						width: 160px;
+						height: 160px;
+						@include background_cover();
+						background-image: url(../img/logo-text.png);
+						//transform: translateY(-200%);
+
+					}
 				}
 
 				.text {
@@ -73,6 +75,7 @@
 					padding: get-vw(6px);
 					//padding-left: get-vw(100px);
 					//border: 1px solid white;
+
 
 					.therefore, .because {
 						font-size: get-vw(36px);

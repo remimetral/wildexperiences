@@ -15,9 +15,9 @@ return [
 
     'dimmer' => [
         'pack' => [
-            'title' => '[0,1] Dog|[2,*] Dogs',
-            'link'  => 'View all dogs',
-            'text'  => 'You have :count :string in your database. Click on button below to view all dogs.',
+            'title' => '[0,1] Chien|[2,*] Chiens',
+            'link'  => 'Voir tous les chiens',
+            'text'  => 'Vous avez :count :string  enregistrés. Cliquez sur le bouton ci-dessous pour afficher tous les chiens.',
         ]
     ]
 

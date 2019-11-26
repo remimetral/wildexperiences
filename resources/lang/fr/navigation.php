@@ -15,10 +15,10 @@ return [
 
 	'title' => [
         'home' 			=> 'Accueil',
-        'activities'   	=> 'Activités',
-		'pack'   		=> 'Meute',
-		'calendar'   	=> 'Calendrier',
-		'location'   	=> 'Localisation',
+        'activities'   	=> 'Les activités',
+		'pack'   		=> 'La meute',
+		'calendar'   	=> 'Nos disponibilités',
+		'location'   	=> 'Où nous trouver',
         'login'  		=> 'Connection',
         'register'		=> 'Inscription',
 		'admin'  		=> 'Admin',

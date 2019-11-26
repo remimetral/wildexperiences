@@ -73360,14 +73360,13 @@ var Home = function () {
 
             TweenMax.from(section.find('.caption'), 1, { y: -100, alpha: 0, ease: Expo.easeOut, delay: 1.8 });
             TweenMax.from(section.find('.title'), 1, { y: 100, alpha: 0, ease: Expo.easeOut, delay: 2.2 });
-            TweenMax.from(section.find('.logo'), 1, { x: -100, alpha: 0, ease: Expo.easeOut, delay: 2.8 });
+            TweenMax.from(section.find('.logo'), 1, { y: -100, alpha: 0, ease: Expo.easeOut, delay: 2.8 });
 
             var timeline = new TimelineMax({ repeat: -1, yoyo: false, repeatDelay: 0 });
 
-            timeline.to(section.find('.title'), 0.8, { text: { value: "Cani-cross", padSpace: true, ease: Linear.easeNone }, delay: 4 });
-            timeline.to(section.find('.title'), 0.8, { text: { value: "Cani-rando", padSpace: true, ease: Linear.easeNone }, delay: 2 });
-            timeline.to(section.find('.title'), 0.8, { text: { value: "Cani-scoot", padSpace: true, ease: Linear.easeNone }, delay: 2 });
-            timeline.to(section.find('.title'), 0.8, { text: { value: "Chien de Traîneau", padSpace: true, ease: Linear.easeNone }, delay: 2 });
+            timeline.to(section.find('.title'), 0.8, { text: { value: "Cani-rando", padSpace: true, ease: Linear.easeNone }, delay: 4 });
+            timeline.to(section.find('.title'), 0.8, { text: { value: "Visite de parc", padSpace: true, ease: Linear.easeNone }, delay: 2 });
+            timeline.to(section.find('.title'), 0.8, { text: { value: "Chiens de Traîneau", padSpace: true, ease: Linear.easeNone }, delay: 2 });
         }
     }, {
         key: 'randomSlide',

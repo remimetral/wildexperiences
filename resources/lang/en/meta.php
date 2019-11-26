@@ -15,11 +15,11 @@ return [
 
 	'description' => 'Description',
 	'title' => [
-        'home' 			=> 'Home',
-        'activities'   	=> 'Activities',
-		'pack'   		=> 'Pack',
-		'calendar'   	=> 'Calendar',
-		'location'   	=> 'Location',
+        'home' 			=> 'Home - Wild Experiences',
+        'activities'   	=> 'Activities - Wild Experiences',
+		'pack'   		=> 'Pack - Wild Experiences',
+		'calendar'   	=> 'Calendar - Wild Experiences',
+		'location'   	=> 'Location - Wild Experiences',
         'login'  		=> 'Login',
 		'reset'			=> 'Reset',
         'register'		=> 'Register'

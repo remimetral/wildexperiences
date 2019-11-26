@@ -22,15 +22,21 @@
 
 				<div class="row">
 					<div class="small-12 columns">
-						<div class="logo"></div>
+						<div class="logo">
+							<div class="image"></div>
+						</div>
 						<div class="text">
 							<div class="caption">Venez découvrir l'expérience</div>
-							<div class="title">Chien de Traîneau</div>
+							<a class="ajax" href="{{ route('activities-'.$lang) }}">
+								<div class="title">Chiens de Traîneau</div>
+							</a>
 						</div>
 					</div>
 				</div>
 
-				<div class="crevoux"></div>
+				<a href="https://www.crevoux.fr" target="_blank">
+					<div class="crevoux"></div>
+				</a>
 
 			</div>
 		</div>

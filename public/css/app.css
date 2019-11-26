@@ -10712,7 +10712,7 @@ a:hover {
 }
 
 .side-menu {
-  background: rgba(173, 216, 230, 0.6);
+  background: rgba(135, 206, 250, 0.4);
   overflow-y: auto;
   z-index: 9999;
   position: fixed;
@@ -10760,7 +10760,7 @@ a:hover {
           transform: translate3d(0, 0, 0);
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
-  background-image: url(/images/logo.png?b3f813496d136611fb1c75f9ab24cf70);
+  background-image: url(/images/logo-menu.png?b3f813496d136611fb1c75f9ab24cf70);
   background-size: 70px 70px;
   text-align: center;
   display: block;
@@ -10837,7 +10837,7 @@ a:hover {
 .side-menu .navbar-nav li.lang {
   position: absolute;
   top: calc(100vh - 80px);
-  text-align: center;
+  padding: 0 0 0 20px;
 }
 
 .side-menu .navbar-nav li.dropdown {
@@ -11028,15 +11028,25 @@ a:hover {
 .container_page.home .content .row {
   display: block;
   position: absolute;
-  -webkit-transform: translate(-40%, -50%);
-          transform: translate(-40%, -50%);
+  -webkit-transform: translate(-50%, -100%);
+          transform: translate(-50%, -100%);
   left: 50%;
-  top: 40%;
+  top: 50%;
 }
 
 .container_page.home .content .row .columns .logo {
-  width: 5.88235294vw;
-  height: 5.88235294vw;
+  width: 160px;
+  height: 160px;
+  background-image: url(/images/trame-bis.png?708b99cd4c4718b355be30c3db38858c);
+  background-repeat: repeat;
+  margin: -170px 0 0 -80px;
+  position: absolute;
+  left: 50%;
+}
+
+.container_page.home .content .row .columns .logo .image {
+  width: 160px;
+  height: 160px;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -11050,17 +11060,14 @@ a:hover {
           transform: translate3d(0, 0, 0);
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
-  background-image: url(/images/logo-white.png?4182cab5003cc10a5a01bda53653286c);
-  position: absolute;
-  left: -5.88235294vw;
-  top: 0.58823529vw;
+  background-image: url(/images/logo-text.png?6a08e9850843685fd5df1ed0c6e1e8d2);
 }
 
 .container_page.home .content .row .columns .text {
-  height: 7.35294118vw;
+  height: 7.8125vw;
   text-align: left;
   font-family: 'Roboto';
-  line-height: 3.38235294vw;
+  line-height: 3.59375vw;
   text-transform: uppercase;
   background-image: url(/images/trame-bis.png?708b99cd4c4718b355be30c3db38858c);
   background-repeat: repeat;
@@ -11071,26 +11078,26 @@ a:hover {
   user-select: none;
   -webkit-transition: background 0.4s ease-in-out;
   transition: background 0.4s ease-in-out;
-  padding: 0.44117647vw;
+  padding: 0.46875vw;
 }
 
 .container_page.home .content .row .columns .text .therefore,
 .container_page.home .content .row .columns .text .because {
-  font-size: 2.64705882vw;
+  font-size: 2.8125vw;
 }
 
 .container_page.home .content .row .columns .text .title {
-  font-size: 3.38235294vw;
+  font-size: 3.59375vw;
   font-weight: bold;
 }
 
 .container_page.home .content .row .columns .text .caption {
-  font-size: 2.64705882vw;
+  font-size: 2.8125vw;
 }
 
 .container_page.home .content .crevoux {
-  width: 8.67647059vw;
-  height: 5.88235294vw;
+  width: 9.21875vw;
+  height: 6.25vw;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -11240,7 +11247,7 @@ a:hover {
 
 .container_page.activities .content .cover .row .columns {
   text-align: center;
-  line-height: 3.08823529vw;
+  line-height: 3.28125vw;
   padding: 12px 0 8px 0;
 }
 
@@ -11248,7 +11255,7 @@ a:hover {
   background-image: url(/images/trame-bis.png?708b99cd4c4718b355be30c3db38858c);
   background-repeat: repeat;
   text-transform: uppercase;
-  font-size: 3.38235294vw;
+  font-size: 3.59375vw;
   font-family: 'Roboto';
   font-weight: bold;
 }

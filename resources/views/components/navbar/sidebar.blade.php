@@ -2,7 +2,7 @@
 	<nav class="navbar navbar-default" role="navigation" id="navigation">
 		<div class="side-menu-container">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="{{-- route('voyager.dashboard') --}}">
+				<a class="navbar-brand home ajax" href="{{ route('home-'.$lang) }}">
 					<div class="logo"></div>
 					<div class="title">Wild Experiences</div>
 				</a>

@@ -18,7 +18,7 @@
 
 .side-menu {
     //background-color: rgba(255, 255, 255, .5);
-    background: rgba(173, 216, 230, .6);
+    background: rgba(135, 206, 250, .4);
     overflow-y: auto;
     z-index: 9999;
     position: fixed;
@@ -43,7 +43,6 @@
             .navbar-brand {
                 width: 280px;
                 height: 100%;
-
                 line-height: 85px;
                 overflow: hidden;
                 padding: 0;
@@ -52,7 +51,7 @@
                     width: 80px;
                     height: 80px;
                     @include background_cover();
-                    background-image: url(../img/logo.png);
+                    background-image: url(../img/logo-menu.png);
                     background-size: 70px 70px;
                     text-align: center;
                     display: block;
@@ -126,7 +125,7 @@
         .active { .title { background: rgba(#fff, .4); } }
     }
 
-    .navbar-nav li.lang { position: absolute; top: calc(100vh - 80px); text-align: center; }
+    .navbar-nav li.lang { position: absolute; top: calc(100vh - 80px); padding: 0 0 0 20px; }
 
     .navbar-nav li.dropdown {
         border: 0;
