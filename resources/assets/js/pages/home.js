@@ -95,7 +95,7 @@ export default class Home {
     randomSlide() {
         var $numberofSlides = $('.carousel-item').length;
         var $currentSlide = Math.floor((Math.random() * $numberofSlides));
-
+        console.log($currentSlide);
         $('.carousel-item').eq($currentSlide).addClass('active');
         $('.carousel').carousel();
     }

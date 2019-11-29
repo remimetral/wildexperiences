@@ -22,8 +22,8 @@
 
 				<div class="row">
 					<div class="small-12 columns">
-						<div class="logo">
-							<div class="image"></div>
+						<div class="bg_logo">
+							<div class="logo"></div>
 						</div>
 						<div class="text">
 							<div class="caption">Venez découvrir l'expérience</div>

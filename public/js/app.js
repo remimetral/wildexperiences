@@ -73373,7 +73373,7 @@ var Home = function () {
         value: function randomSlide() {
             var $numberofSlides = $('.carousel-item').length;
             var $currentSlide = Math.floor(Math.random() * $numberofSlides);
-
+            console.log($currentSlide);
             $('.carousel-item').eq($currentSlide).addClass('active');
             $('.carousel').carousel();
         }
@@ -73574,6 +73574,7 @@ var Activities = function () {
         key: 'animationIn',
         value: function animationIn() {
             //var _this = this;
+            TweenMax.from(this.page.find('.logo'), 1, { scale: .8, alpha: 0, ease: Expo.easeOut, delay: 1.4 });
             TweenMax.from(this.page.find('.winter'), 1, { left: '-100%', ease: Expo.easeOut, delay: __WEBPACK_IMPORTED_MODULE_1__bundle__["a" /* deeplink */].delayBeforeAnimIn });
             TweenMax.from(this.page.find('.summer'), 1, { right: '-100%', ease: Expo.easeOut, delay: __WEBPACK_IMPORTED_MODULE_1__bundle__["a" /* deeplink */].delayBeforeAnimIn });
             __WEBPACK_IMPORTED_MODULE_1__bundle__["a" /* deeplink */].reInitAnimation(__WEBPACK_IMPORTED_MODULE_1__bundle__["a" /* deeplink */].delayReInit);
@@ -73584,6 +73585,7 @@ var Activities = function () {
         key: 'animationOut',
         value: function animationOut() {
             this.panel = 'default';
+            TweenMax.to(this.page.find('.logo'), 1, { scale: 1.2, alpha: 0, ease: Expo.easeOut });
             TweenMax.to(this.page.find('.winter'), 1, { left: '-100%', ease: Expo.easeOut });
             TweenMax.to(this.page.find('.summer'), 1, { right: '-100%', ease: Expo.easeOut });
         }
@@ -73704,7 +73706,7 @@ var Pack = function () {
         value: function animationOut() {
             TweenMax.to(this.page.find('.bg_page'), 1, { alpha: 0, ease: Linear.easeOut });
             Array.from(this.els.figure).forEach(function (el) {
-                TweenMax.to(el, 1, { x: 1000, alpha: 0, ease: Expo.easeOut, delay: el.dataset.id / 8 });
+                TweenMax.to(el, 1, { y: -200, alpha: 0, ease: Expo.easeOut, delay: el.dataset.id / 8 });
             });
         }
     }, {

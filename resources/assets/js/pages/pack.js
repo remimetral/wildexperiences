@@ -79,7 +79,7 @@ export default class Pack {
     animationOut() {
         TweenMax.to(this.page.find('.bg_page'), 1, { alpha: 0, ease: Linear.easeOut });
         Array.from(this.els.figure).forEach((el) => {
-            TweenMax.to(el, 1, { x: 1000, alpha: 0, ease: Expo.easeOut, delay: el.dataset.id/8 });
+            TweenMax.to(el, 1, { y: -200, alpha: 0, ease: Expo.easeOut, delay: el.dataset.id/8 });
         });
     }
 

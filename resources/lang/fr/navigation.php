@@ -15,13 +15,13 @@ return [
 
 	'title' => [
         'home' 			=> 'Accueil',
-        'activities'   	=> 'Les activités',
-		'pack'   		=> 'La meute',
-		'calendar'   	=> 'Nos disponibilités',
-		'location'   	=> 'Où nous trouver',
+        'activities'   	=> 'Les Activités',
+		'pack'   		=> 'La Meute',
+		'calendar'   	=> 'Nos Disponibilités',
+		'location'   	=> 'Où Nous Trouver',
         'login'  		=> 'Connection',
         'register'		=> 'Inscription',
-		'admin'  		=> 'Admin',
+		'admin'  		=> 'Administration',
     ]
 
 ];

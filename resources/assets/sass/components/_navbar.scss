@@ -18,7 +18,7 @@
 
 .side-menu {
     //background-color: rgba(255, 255, 255, .5);
-    background: rgba(135, 206, 250, .4);
+    //background: rgba(135, 206, 250, .4);
     overflow-y: auto;
     z-index: 9999;
     position: fixed;
@@ -99,7 +99,7 @@
             display: block;
             white-space: nowrap;
 
-            .icon {
+            .icon-menu {
                 width: 60px;
                 height: auto;
                 font-size: 2.5em;

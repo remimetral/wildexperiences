@@ -130,6 +130,7 @@ export default class Activities {
 
     animationIn() {
         //var _this = this;
+        TweenMax.from(this.page.find('.logo'), 1, { scale: .8, alpha: 0, ease: Expo.easeOut, delay: 1.4 });
         TweenMax.from(this.page.find('.winter'), 1, { left: '-100%', ease: Expo.easeOut, delay: deeplink.delayBeforeAnimIn });
         TweenMax.from(this.page.find('.summer'), 1, { right: '-100%', ease: Expo.easeOut, delay: deeplink.delayBeforeAnimIn });
         deeplink.reInitAnimation(deeplink.delayReInit);
@@ -139,6 +140,7 @@ export default class Activities {
 
     animationOut() {
         this.panel = 'default'
+        TweenMax.to(this.page.find('.logo'), 1, { scale: 1.2, alpha: 0, ease: Expo.easeOut });
         TweenMax.to(this.page.find('.winter'), 1, { left: '-100%', ease: Expo.easeOut });
         TweenMax.to(this.page.find('.summer'), 1, { right: '-100%', ease: Expo.easeOut });
     }

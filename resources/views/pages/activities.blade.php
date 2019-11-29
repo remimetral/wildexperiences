@@ -16,6 +16,7 @@
 	<div class="content_scroll">
 		<div class="content">
 			<div class="container">
+				<div class="logo"></div>
 				<div class="winter">
 					<div class="cover" data-type="winter">
 						<div class="row">

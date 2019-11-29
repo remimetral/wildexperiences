@@ -12,7 +12,7 @@
 			@foreach($items as $item)
 				<li class="nav-item">
 					<a class="nav-link {{ strtolower($item->title) }} ajax" href="{{ route($item->route.'-'.$lang) }}">
-						<span class="icon {{ $item->icon_class }}"></span>
+						<span class="icon-menu {{ $item->icon_class }}"></span>
 			            <span class="title">{{ Lang::get('navigation.title.'.strtolower($item->title)) }}</span>
 					</a>
 				</li>

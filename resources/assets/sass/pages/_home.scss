@@ -39,7 +39,7 @@
 			left: 50%; top: 50%;
 
 			.columns {
-				.logo {
+				.bg_logo {
 					width: 160px;
 					height: 160px;
 					background-image: url(../img/trame-bis.png);
@@ -48,11 +48,11 @@
 					position: absolute;
 					left: 50%;
 
-					.image {
+					.logo {
 						width: 160px;
 						height: 160px;
 						@include background_cover();
-						background-image: url(../img/logo-text.png);
+						background-image: url(../img/logo.png);
 						//transform: translateY(-200%);
 
 					}
