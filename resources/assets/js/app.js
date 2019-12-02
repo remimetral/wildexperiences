@@ -12,6 +12,8 @@ import Vue from 'vue';
 import Buefy from 'buefy';
 import Bundle from './bundle';
 import bulmaCalendar from 'bulma-calendar/dist/bulma-calendar'
+//import * as VueGoogleMaps from 'vue2-google-maps'
+import * as L from 'leaflet'
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -22,7 +24,7 @@ import bulmaCalendar from 'bulma-calendar/dist/bulma-calendar'
 Vue.use(Buefy);
 
 Vue.component('grid', require('./components/Grid.vue'));
-Vue.component('modal', require('./components/Modal.vue'));
+//Vue.component('modal', require('./components/Modal.vue'));
 Vue.component('tiles', require('./components/Tiles.vue'));
 Vue.component('calendar', require('./components/Calendar.vue'));
 
@@ -33,3 +35,4 @@ $.ajaxSetup({
 });
 
 const bundle = new Bundle();
+//const app = new Vue({ el: '#app' });

@@ -1,6 +1,7 @@
 
 import Vue from 'vue';
 import { deeplink } from '../bundle';
+import { isMobile } from "../vendor/library";
 
 export default class Activities {
     /**
@@ -9,8 +10,6 @@ export default class Activities {
     constructor() {
         this.variables();
         this.init();
-        //this.initEls();
-        //this.initEvents();
     }
 
     /**
@@ -18,8 +17,10 @@ export default class Activities {
      */
     variables() {
         this.page = null;
+        this.mobile = null;
         this.id = 'activities';
         this.panel = 'default';
+        this.$window = $(window);
         this.$document = $(document);
         this.current = deeplink.$pages.eq(deeplink.current).find('.page_menu_id').val();
     }
@@ -28,11 +29,10 @@ export default class Activities {
      * Initialize
      */
     init() {
-        this.$document.on('page_change', this.check.bind(this));
+        this.$document.on("page_change", this.check.bind(this));
         if (this.id == this.current) {
             this.initEls();
             this.initEvents();
-            //this.onClickWinter();
         }
     }
 
@@ -51,19 +51,39 @@ export default class Activities {
      * Initialize events
      */
     initEvents() {
+        this.$window.on("load resize", this.onWindowResize.bind(this));
         for (var cover of this.els.cover) {
             cover.addEventListener("click", this.onClickCover.bind(cover));
-            cover.addEventListener("mouseover", this.onHoverCover.bind(cover));
+            //cover.addEventListener("mouseover", this.onOverCover.bind(cover));
         }
         //this.els.winter[0].addEventListener("click", this.onClickWinter.bind(this));
         //this.els.summer[0].addEventListener("click", this.onClickSummer.bind(this));
     }
 
+    onWindowResize() {
+        if (this.$window.width() < 769) {
+            TweenMax.to(this.els.winter[0], .1, { left: 0, top: "-50%", ease: Strong.easeOut });
+            TweenMax.to(this.els.summer[0], .1, { right: 0, top: "50%", ease: Strong.easeOut });
+        } else {
+            TweenMax.to(this.els.winter[0], .1, { top: 0, left: "-50%", ease: Strong.easeOut });
+            TweenMax.to(this.els.summer[0], .1, { top: 0, right: "-50%", ease: Strong.easeOut });
+        }
+    }
+
     /**
      * On hover cover
      */
-    onHoverCover() {
-        console.log(this);
+    onOverCover() {
+        //if (isMobile.any()) { console.log(this); }
+        /*$(window).bind("load resize", function() {
+            if ($(this).width() < 769) {
+                console.log("mobile");
+                //$('body').addClass('body-small')
+            } else {
+                console.log("desktop");
+                //$('body').removeClass('body-small')
+            }
+        })*/
         //var tl = new TimelineMax({repeat:-1,repeatDelay:1});
         //tl.add(TweenLite.to(img1, 10, {delay:1, css: { 'filter': 'grayscale(0%)','-webkit-filter': 'grayscale(0%)' },ease:Linear.easeNone,onComplete:function(){
     }
@@ -77,23 +97,43 @@ export default class Activities {
             if (this.panel == undefined) {
                 this.panel = 'winter';
                 this.parentElement.classList.add("zindex");
-                TweenMax.to(this.parentElement, 1, { left: 0, ease: Expo.easeOut });
+                if ($(window).width() < 769) {
+                    TweenMax.to(this.parentElement, 1, { top: 0, ease: Expo.easeOut });
+                } else {
+                    TweenMax.to(this.parentElement, 1, { left: 0, ease: Expo.easeOut });
+                }
             } else {
                 this.panel = undefined;
-                TweenMax.to(this.parentElement, 1, { left: '-50%', ease: Expo.easeOut, onComplete: function() {
-                    _this.parentElement.classList.remove("zindex");
-                }});
+                if ($(window).width() < 769) {
+                    TweenMax.to(this.parentElement, 1, { top: '-50%', ease: Expo.easeOut, onComplete: function() {
+                        _this.parentElement.classList.remove("zindex");
+                    }});
+                } else {
+                    TweenMax.to(this.parentElement, 1, { left: '-50%', ease: Expo.easeOut, onComplete: function() {
+                        _this.parentElement.classList.remove("zindex");
+                    }});
+                }
             }
         } else if (this.dataset.type == 'summer') {
             if( this.panel == undefined ) {
                 this.panel = 'summer';
                 this.parentElement.classList.add("zindex");
-                TweenMax.to(this.parentElement, 1, { right: 0, ease: Expo.easeOut });
+                if ($(window).width() < 769) {
+                    TweenMax.to(this.parentElement, 1, { top: 0, ease: Expo.easeOut });
+                } else {
+                    TweenMax.to(this.parentElement, 1, { right: 0, ease: Expo.easeOut });
+                }
             } else {
                 this.panel = undefined;
-                TweenMax.to(this.parentElement, 1, { right: '-50%', ease: Expo.easeOut, onComplete: function() {
-                    _this.parentElement.classList.remove("zindex");
-                }});
+                if ($(window).width() < 769) {
+                    TweenMax.to(this.parentElement, 1, { top: '50%', ease: Expo.easeOut, onComplete: function() {
+                        _this.parentElement.classList.remove("zindex");
+                    }});
+                } else {
+                    TweenMax.to(this.parentElement, 1, { right: '-50%', ease: Expo.easeOut, onComplete: function() {
+                        _this.parentElement.classList.remove("zindex");
+                    }});
+                }
             }
         }
     }

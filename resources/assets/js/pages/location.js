@@ -26,9 +26,9 @@ export default class Loaction {
      */
     init() {
         this.$document.on('page_change', this.check.bind(this));
-        /*if (this.id == this.current) {
-            this.app = new Vue({el: '#app'});
-        }*/
+        if (this.id == this.current) {
+            this.setMapsView();
+        }
     }
 
     /**
@@ -52,19 +52,32 @@ export default class Loaction {
         }
     }
 
+    setMapsView() {
+        var mymap = L.map('maps').setView([44.545262, 6.614459], 14);
+
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+            maxZoom: 18,
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>',
+            id: 'mapbox/streets-v11'
+        }).addTo(mymap);
+    }
+
     reInit() {
         //this.app = new Vue({el: '#app'});
+        this.setMapsView();
         this.$document.title = this.page.find('.page_title').val();
     }
 
     animationIn() {
         TweenMax.from(this.page.find('.bg_page'), 1, { alpha: 0, ease: Linear.easeOut });
-        TweenMax.from(this.page.find('.content'), 1, { x: -100, alpha: 0, ease: Expo.easeOut, delay: deeplink.delayBeforeAnimIn });
+        TweenMax.from(this.page.find('.text'), 1, { y: -100, alpha: 0, ease: Expo.easeOut, delay: deeplink.delayBeforeAnimIn });
+        TweenMax.from(this.page.find('.maps'), 1, { y: 100, alpha: 0, ease: Expo.easeOut, delay: deeplink.delayBeforeAnimIn });
         deeplink.reInitAnimation(deeplink.delayReInit);
     }
 
     animationOut() {
         TweenMax.to(this.page.find('.bg_page'), 1, { alpha: 0, ease: Linear.easeOut });
-        TweenMax.to(this.page.find('.content'), 1, { x: -100, alpha: 0, ease: Expo.easeOut });
+        TweenMax.to(this.page.find('.text'), 1, { y: -100, alpha: 0, ease: Expo.easeOut });
+        TweenMax.to(this.page.find('.maps'), 1, { y: 100, alpha: 0, ease: Expo.easeOut });
     }
 }

@@ -14,18 +14,35 @@
 	.content {
 		color: #000;
 
-		.row {
+		.text {
 			width: auto;
-			height: 100vh;
-			display: flex;
-			margin: 0 auto;
+			height: 50vh;
+			overflow-y: auto;
 
-			.columns {
+			.row {
+				width: auto;
+				height: 50vh;
 				display: flex;
-				justify-content: center;
-				flex-direction: column;
-				text-align: left;
+				margin: 0 auto;
+				padding: 20px;
+
+				.columns {
+					display: flex;
+					justify-content: left;
+					flex-direction: column;
+					text-align: left;
+
+				}
 			}
+		}
+
+		.maps {
+			width: 100%;
+			height: 50%;
+			position: absolute;
+			z-index: 20;
+			bottom: 0;
+			left: 0;
 		}
 	}
 }

@@ -1,4 +1,9 @@
-// Custom scripts
+/**
+ * inspinia.js
+ *
+ * Custom scripts
+ **/
+
 $(document).ready(function () {
 
     // MetsiMenu
@@ -142,5 +147,3 @@ function WinMove() {
         })
         .disableSelection();
 };
-
-

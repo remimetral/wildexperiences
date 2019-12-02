@@ -32,5 +32,8 @@
         "video.js": "^5.14.1",
         "videojs-background": "^1.0.7",
         "vue": "^2.5.7"
+    },
+    "dependencies": {
+        "leaflet": "^1.6.0"
     }
 }

@@ -5,7 +5,7 @@
 //  =========================================================
 //
 
-$min-breakpoint: 768;
+$min-breakpoint: 767;
 $max-breakpoint: 1280;
 $med-breakpoint: 680;
 
@@ -22,4 +22,11 @@ $landscape-screen: "(orientation: landscape)";
 @function get-vh($target) {
   $vh-context: ($max-breakpoint * .01) * 1px;
   @return ($target/$vh-context) * 1vh;
+}
+
+@mixin vw($size) {
+  font-size: get-vw($size);
+  @media #{$wide-screen} {
+    font-size: $size;
+  }
 }
