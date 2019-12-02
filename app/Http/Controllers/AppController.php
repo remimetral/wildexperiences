@@ -100,7 +100,8 @@ class AppController extends Controller {
 	public function location()
 	{
 		$this->setLocale();
-		return view('pages.location', ['page_id' => 'location']);
+		$location = App\Page::whereSlug('location')->firstOrFail();
+		return view('pages.location', ['page_id' => 'location'], compact('location'));
 	}
 
 	/**

@@ -13435,7 +13435,7 @@ a:hover {
           transform: translate3d(0, 0, 0);
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
-  background-image: url(/images/logo-split.png?6bf29254a264e6b472b659873a23a2c3);
+  background-image: url(/images/logo-activities.png?6bf29254a264e6b472b659873a23a2c3);
   display: block;
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
@@ -13840,6 +13840,83 @@ a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: left;
+}
+
+.container_page.location .content .text .row .columns h1 {
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+@media (max-width: 1280px) {
+  .container_page.location .content .text .row .columns h1 {
+    font-size: 32px;
+  }
+}
+
+.container_page.location .content .text .row .columns h4 {
+  font-size: 1.40625vw;
+}
+
+@media (max-width: 1280px) {
+  .container_page.location .content .text .row .columns h4 {
+    font-size: 18px;
+  }
+}
+
+.container_page.location .content .text .row .columns p {
+  font-size: 0.9375vw;
+}
+
+@media (max-width: 1280px) {
+  .container_page.location .content .text .row .columns p {
+    font-size: 12px;
+  }
+}
+
+.container_page.location .content .text .row .columns div {
+  font-size: 1.015625vw;
+}
+
+@media (max-width: 1280px) {
+  .container_page.location .content .text .row .columns div {
+    font-size: 13px;
+  }
+}
+
+.container_page.location .content .text .row .columns strong {
+  font-size: 1.015625vw;
+}
+
+@media (max-width: 1280px) {
+  .container_page.location .content .text .row .columns strong {
+    font-size: 13px;
+  }
+}
+
+.container_page.location .content .text .row .columns .bg_logo {
+  width: 160px;
+  height: 160px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.container_page.location .content .text .row .columns .bg_logo .logo {
+  width: 160px;
+  height: 160px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-perspective: 1000;
+          perspective: 1000;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  background-image: url(/images/logo-location.png?895a3dc75f4c7c9e474711864d4d1cb4);
 }
 
 .container_page.location .content .maps {
