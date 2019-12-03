@@ -42,9 +42,9 @@
 				.bg_logo {
 					width: 160px;
 					height: 160px;
-					background-image: url(../img/trame-bis.png);
-					background-repeat: repeat;
-					margin: -170px 0 0 -80px;
+					//background-image: url(../img/trame-bis.png);
+					//background-repeat: repeat;
+					margin: -180px 0 0 -80px;
 					position: absolute;
 					left: 50%;
 
@@ -53,8 +53,6 @@
 						height: 160px;
 						@include background_cover();
 						background-image: url(../img/logo.png);
-						//transform: translateY(-200%);
-
 					}
 				}
 

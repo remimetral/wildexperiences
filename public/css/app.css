@@ -12883,7 +12883,7 @@ a:hover {
           transform: translate3d(0, 0, 0);
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
-  background-image: url(/images/carousel_01.jpg?228d2389b987c80c85b030215d4cd82e);
+  background-image: url(/images/carousel_01.jpg?3fff7e86704cfdf527b50eb6943e3dcc);
 }
 
 .carousel-item:nth-child(2) {
@@ -12900,7 +12900,7 @@ a:hover {
           transform: translate3d(0, 0, 0);
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
-  background-image: url(/images/carousel_02.jpg?897d4d297e129efd1dbeabdc0fed2d80);
+  background-image: url(/images/carousel_02.jpg?987634478029e6da46cdae32800c51cf);
 }
 
 .carousel-item:nth-child(3) {
@@ -12917,7 +12917,7 @@ a:hover {
           transform: translate3d(0, 0, 0);
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
-  background-image: url(/images/carousel_03.jpg?de676c1b620906be406846f77df90cb2);
+  background-image: url(/images/carousel_03.jpg?609536f7ff1e6996f3280500cfda550f);
 }
 
 .sidebar-inverse {
@@ -12938,6 +12938,10 @@ a:hover {
   height: 100%;
   -webkit-transition: width 250ms;
   transition: width 250ms;
+  -webkit-box-shadow: 1px 0px 10px 0px #656565;
+  -o-box-shadow: 1px 0px 10px 0px #656565;
+  box-shadow: 1px 0px 10px 0px #656565;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=90, Strength=10);
 }
 
 .side-menu .navbar {
@@ -13255,9 +13259,7 @@ a:hover {
 .container_page.home .content .row .columns .bg_logo {
   width: 160px;
   height: 160px;
-  background-image: url(/images/trame-bis.png?708b99cd4c4718b355be30c3db38858c);
-  background-repeat: repeat;
-  margin: -170px 0 0 -80px;
+  margin: -180px 0 0 -80px;
   position: absolute;
   left: 50%;
 }
@@ -13278,7 +13280,7 @@ a:hover {
           transform: translate3d(0, 0, 0);
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
-  background-image: url(/images/logo.png?6a08e9850843685fd5df1ed0c6e1e8d2);
+  background-image: url(/images/logo.png?f15bd240a4a4f451b8b8976221d1e8c2);
 }
 
 .container_page.home .content .row .columns .text {
@@ -13287,7 +13289,7 @@ a:hover {
   font-family: 'Roboto';
   line-height: 3.59375vw;
   text-transform: uppercase;
-  background-image: url(/images/trame-bis.png?708b99cd4c4718b355be30c3db38858c);
+  background-image: url(/images/trame-bis.png?95719cb516151b5c976e0073d245b48a);
   background-repeat: repeat;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -13438,10 +13440,10 @@ a:hover {
   background-image: url(/images/logo-activities.png?6bf29254a264e6b472b659873a23a2c3);
   display: block;
   position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -20%);
+          transform: translate(-50%, -20%);
   left: 50%;
-  top: 50%;
+  top: 40%;
   z-index: 14;
 }
 
@@ -13474,6 +13476,11 @@ a:hover {
           transform: translate3d(0, 0, 0);
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -ms-filter: grayscale(1);
+  -o-filter: grayscale(1);
+  filter: grayscale(1);
   -webkit-transition: filter 0.4s ease-in-out;
   -webkit-transition: -webkit-filter 0.4s ease-in-out;
   transition: -webkit-filter 0.4s ease-in-out;
@@ -13496,7 +13503,7 @@ a:hover {
 }
 
 .container_page.activities .content .cover .row .columns .title {
-  background-image: url(/images/trame-bis.png?708b99cd4c4718b355be30c3db38858c);
+  background-image: url(/images/trame-bis.png?95719cb516151b5c976e0073d245b48a);
   background-repeat: repeat;
   text-transform: uppercase;
   font-size: 3.59375vw;
@@ -13510,6 +13517,7 @@ a:hover {
   color: #000000;
   position: absolute;
   text-align: justify;
+  font-family: 'Roboto';
 }
 
 .container_page.activities .content .text .row {
@@ -13568,22 +13576,22 @@ a:hover {
 }
 
 .container_page.activities .content .text .row .columns div {
-  font-size: 1.015625vw;
+  font-size: 0.9375vw;
 }
 
 @media (max-width: 1280px) {
   .container_page.activities .content .text .row .columns div {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 
 .container_page.activities .content .text .row .columns strong {
-  font-size: 1.015625vw;
+  font-size: 0.9375vw;
 }
 
 @media (max-width: 1280px) {
   .container_page.activities .content .text .row .columns strong {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 
@@ -13891,32 +13899,6 @@ a:hover {
   .container_page.location .content .text .row .columns strong {
     font-size: 13px;
   }
-}
-
-.container_page.location .content .text .row .columns .bg_logo {
-  width: 160px;
-  height: 160px;
-  position: relative;
-  margin: 0 auto;
-}
-
-.container_page.location .content .text .row .columns .bg_logo .logo {
-  width: 160px;
-  height: 160px;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  -webkit-perspective: 1000;
-          perspective: 1000;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
-  background-image: url(/images/logo-location.png?895a3dc75f4c7c9e474711864d4d1cb4);
 }
 
 .container_page.location .content .maps {

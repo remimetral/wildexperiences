@@ -87986,7 +87986,8 @@ var Activities = function () {
                     var cover = _step.value;
 
                     cover.addEventListener("click", this.onClickCover.bind(cover));
-                    //cover.addEventListener("mouseover", this.onOverCover.bind(cover));
+                    cover.addEventListener("mouseover", this.onOverCover.bind(cover));
+                    cover.addEventListener("mouseout", this.onOutCover.bind(cover));
                 }
                 //this.els.winter[0].addEventListener("click", this.onClickWinter.bind(this));
                 //this.els.summer[0].addEventListener("click", this.onClickSummer.bind(this));
@@ -88023,20 +88024,19 @@ var Activities = function () {
 
     }, {
         key: 'onOverCover',
-        value: function onOverCover() {}
-        //if (isMobile.any()) { console.log(this); }
-        /*$(window).bind("load resize", function() {
-            if ($(this).width() < 769) {
-                console.log("mobile");
-                //$('body').addClass('body-small')
-            } else {
-                console.log("desktop");
-                //$('body').removeClass('body-small')
-            }
-        })*/
-        //var tl = new TimelineMax({repeat:-1,repeatDelay:1});
-        //tl.add(TweenLite.to(img1, 10, {delay:1, css: { 'filter': 'grayscale(0%)','-webkit-filter': 'grayscale(0%)' },ease:Linear.easeNone,onComplete:function(){
+        value: function onOverCover() {
+            TweenMax.to(this, .5, { css: { 'filter': 'grayscale(0)', '-webkit-filter': 'grayscale(0)' }, ease: Linear.easeNone });
+        }
 
+        /**
+         * On out cover
+         */
+
+    }, {
+        key: 'onOutCover',
+        value: function onOutCover() {
+            TweenMax.to(this, .5, { css: { 'filter': 'grayscale(1)', '-webkit-filter': 'grayscale(1)' }, ease: Linear.easeNone });
+        }
 
         /**
          * On click cover
@@ -88128,7 +88128,7 @@ var Activities = function () {
         key: 'animationIn',
         value: function animationIn() {
             //var _this = this;
-            TweenMax.from(this.page.find('.logo'), 1, { scale: .8, alpha: 0, ease: Expo.easeOut, delay: 1.4 });
+            TweenMax.from(this.page.find('.logo'), 1, { scale: .8, alpha: 0, ease: Expo.easeOut, delay: 1.2 });
             TweenMax.from(this.page.find('.winter'), 1, { left: '-100%', ease: Expo.easeOut, delay: __WEBPACK_IMPORTED_MODULE_1__bundle__["a" /* deeplink */].delayBeforeAnimIn });
             TweenMax.from(this.page.find('.summer'), 1, { right: '-100%', ease: Expo.easeOut, delay: __WEBPACK_IMPORTED_MODULE_1__bundle__["a" /* deeplink */].delayBeforeAnimIn });
             __WEBPACK_IMPORTED_MODULE_1__bundle__["a" /* deeplink */].reInitAnimation(__WEBPACK_IMPORTED_MODULE_1__bundle__["a" /* deeplink */].delayReInit);
@@ -88139,7 +88139,7 @@ var Activities = function () {
         key: 'animationOut',
         value: function animationOut() {
             this.panel = 'default';
-            TweenMax.to(this.page.find('.logo'), 1, { scale: 1.2, alpha: 0, ease: Expo.easeOut });
+            TweenMax.to(this.page.find('.logo'), 1, { scale: 1.2, alpha: 0, ease: Expo.easeOut, delay: .8 });
             TweenMax.to(this.page.find('.winter'), 1, { left: '-100%', ease: Expo.easeOut });
             TweenMax.to(this.page.find('.summer'), 1, { right: '-100%', ease: Expo.easeOut });
         }

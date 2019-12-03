@@ -26,6 +26,13 @@
     height: 100%;
     -webkit-transition: width 250ms;
     transition: width 250ms;
+    //border-right: solid 2px black;
+
+    -moz-box-shadow: 1px 0px 10px 0px #656565;
+    -webkit-box-shadow: 1px 0px 10px 0px #656565;
+    -o-box-shadow: 1px 0px 10px 0px #656565;
+    box-shadow: 1px 0px 10px 0px #656565;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=90, Strength=10);
 
     .navbar {
         width: 100%;

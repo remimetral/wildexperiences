@@ -37,22 +37,6 @@
 					p { @include vw(12px); }
 					div { @include vw(13px); }
 					strong { @include vw(13px); }
-
-					.bg_logo {
-						width: 160px;
-						height: 160px;
-						position: relative;
-						margin: 0 auto;
-						//left: 50%;
-
-						.logo {
-							width: 160px;
-							height: 160px;
-							@include background_cover();
-							background-image: url(../img/logo-location.png);
-							//transform: translateY(-200%);
-						}
-					}
 				}
 			}
 		}

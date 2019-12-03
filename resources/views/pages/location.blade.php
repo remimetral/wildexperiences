@@ -20,10 +20,7 @@
 						<div class="row">
 							<div class="large-12 columns">
 								<h1>{{ $location->title }}</h1>
-								<div class="bg_logo">
-									<div class="logo"></div>
-								</div>
-								<img src="{{ Voyager::image( $location->image ) }}" style="width:100%">
+								<!--<img src="{{ Voyager::image( $location->image ) }}" style="width:100%">-->
 								<p>{!! $location->body !!}</p>
 							</div>
 						</div>
