@@ -32,7 +32,7 @@
     }
 }
 
-$carousel: 3;
+$carousel: 4;
 
 @for $i from 1 through $carousel {
     .carousel-item:nth-child(#{$i}) {

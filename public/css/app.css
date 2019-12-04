@@ -12883,7 +12883,7 @@ a:hover {
           transform: translate3d(0, 0, 0);
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
-  background-image: url(/images/carousel_01.jpg?3fff7e86704cfdf527b50eb6943e3dcc);
+  background-image: url(/images/carousel_01.jpg?897d4d297e129efd1dbeabdc0fed2d80);
 }
 
 .carousel-item:nth-child(2) {
@@ -12900,7 +12900,7 @@ a:hover {
           transform: translate3d(0, 0, 0);
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
-  background-image: url(/images/carousel_02.jpg?987634478029e6da46cdae32800c51cf);
+  background-image: url(/images/carousel_02.jpg?65b123c409c7e01cce15e1817a0a53af);
 }
 
 .carousel-item:nth-child(3) {
@@ -12917,7 +12917,24 @@ a:hover {
           transform: translate3d(0, 0, 0);
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
-  background-image: url(/images/carousel_03.jpg?609536f7ff1e6996f3280500cfda550f);
+  background-image: url(/images/carousel_03.jpg?987634478029e6da46cdae32800c51cf);
+}
+
+.carousel-item:nth-child(4) {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-perspective: 1000;
+          perspective: 1000;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  background-image: url(/images/carousel_04.jpg?8f5baa7fa714aa6e7113c4e87b53064f);
 }
 
 .sidebar-inverse {
@@ -13476,11 +13493,6 @@ a:hover {
           transform: translate3d(0, 0, 0);
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
-  -webkit-filter: grayscale(1);
-  -moz-filter: grayscale(1);
-  -ms-filter: grayscale(1);
-  -o-filter: grayscale(1);
-  filter: grayscale(1);
   -webkit-transition: filter 0.4s ease-in-out;
   -webkit-transition: -webkit-filter 0.4s ease-in-out;
   transition: -webkit-filter 0.4s ease-in-out;
@@ -13600,7 +13612,7 @@ a:hover {
 }
 
 .container_page.activities .content .winter .cover {
-  background-image: url(/images/winter.jpg?37461120942b9d15525f41b278cc9ca1);
+  background-image: url(/images/winter.jpg?bfe8242bbbac51764ccd59d7ff809721);
   border-right: 1px solid white;
   margin-left: 50%;
 }
@@ -13610,7 +13622,7 @@ a:hover {
 }
 
 .container_page.activities .content .summer .cover {
-  background-image: url(/images/summer.jpg?46d810a4967f5f3e1f0d2605e627ca06);
+  background-image: url(/images/summer.jpg?f25f11f5a54ae729150463d125cea5f5);
   border-left: 1px solid white;
 }
 
@@ -13853,6 +13865,7 @@ a:hover {
 .container_page.location .content .text .row .columns h1 {
   font-size: 2.5vw;
   text-align: center;
+  padding: 20px 0;
 }
 
 @media (max-width: 1280px) {

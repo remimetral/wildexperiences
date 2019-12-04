@@ -42,7 +42,7 @@
 			cursor: pointer;
 			position: absolute;
 			@include background_cover();
-			@include filter(grayscale(1));
+			//@include filter(grayscale(1));
 			@include transition(filter .4s ease-in-out);
 
 			.row {

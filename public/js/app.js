@@ -87986,8 +87986,8 @@ var Activities = function () {
                     var cover = _step.value;
 
                     cover.addEventListener("click", this.onClickCover.bind(cover));
-                    cover.addEventListener("mouseover", this.onOverCover.bind(cover));
-                    cover.addEventListener("mouseout", this.onOutCover.bind(cover));
+                    //cover.addEventListener("mouseover", this.onOverCover.bind(cover));
+                    //cover.addEventListener("mouseout", this.onOutCover.bind(cover));
                 }
                 //this.els.winter[0].addEventListener("click", this.onClickWinter.bind(this));
                 //this.els.summer[0].addEventListener("click", this.onClickSummer.bind(this));
@@ -88127,6 +88127,7 @@ var Activities = function () {
     }, {
         key: 'animationIn',
         value: function animationIn() {
+            $('.carousel-test').carousel();
             //var _this = this;
             TweenMax.from(this.page.find('.logo'), 1, { scale: .8, alpha: 0, ease: Expo.easeOut, delay: 1.2 });
             TweenMax.from(this.page.find('.winter'), 1, { left: '-100%', ease: Expo.easeOut, delay: __WEBPACK_IMPORTED_MODULE_1__bundle__["a" /* deeplink */].delayBeforeAnimIn });

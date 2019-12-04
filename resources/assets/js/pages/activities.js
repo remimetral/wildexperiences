@@ -54,8 +54,8 @@ export default class Activities {
         this.$window.on("load resize", this.onWindowResize.bind(this));
         for (var cover of this.els.cover) {
             cover.addEventListener("click", this.onClickCover.bind(cover));
-            cover.addEventListener("mouseover", this.onOverCover.bind(cover));
-            cover.addEventListener("mouseout", this.onOutCover.bind(cover));
+            //cover.addEventListener("mouseover", this.onOverCover.bind(cover));
+            //cover.addEventListener("mouseout", this.onOutCover.bind(cover));
         }
         //this.els.winter[0].addEventListener("click", this.onClickWinter.bind(this));
         //this.els.summer[0].addEventListener("click", this.onClickSummer.bind(this));
@@ -165,7 +165,7 @@ export default class Activities {
         this.$document.title = this.page.find('.page_title').val();
     }
 
-    animationIn() {
+    animationIn() { $('.carousel-test').carousel();
         //var _this = this;
         TweenMax.from(this.page.find('.logo'), 1, { scale: .8, alpha: 0, ease: Expo.easeOut, delay: 1.2 });
         TweenMax.from(this.page.find('.winter'), 1, { left: '-100%', ease: Expo.easeOut, delay: deeplink.delayBeforeAnimIn });
