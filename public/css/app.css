@@ -13530,6 +13530,7 @@ a:hover {
   position: absolute;
   text-align: justify;
   font-family: 'Roboto';
+  overflow-y: auto;
 }
 
 .container_page.activities .content .text .row {
@@ -13546,9 +13547,9 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: top;
+      -ms-flex-pack: top;
+          justify-content: top;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;

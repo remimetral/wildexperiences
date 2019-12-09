@@ -76,6 +76,7 @@
 			position: absolute;
 			text-align: justify;
 			font-family: 'Roboto';
+			overflow-y: auto;
 
 			.row {
 				width: auto;
@@ -86,7 +87,7 @@
 
 				.columns {
 					display: flex;
-					justify-content: center;
+					justify-content: top;
 					flex-direction: column;
 					text-align: left;
 
