@@ -53,13 +53,32 @@ export default class Loaction {
     }
 
     setMapsView() {
-        var mymap = L.map('maps').setView([44.545262, 6.614459], 14);
+        var lat = 44.545262;
+        var lon = 6.614459;
+        var map = L.map('maps').setView([lat, lon], 15);
+        var stakes = {
+        	"Chiens de Traîneau": { "lat": 44.545262, "lon": 6.614459, "icon": "images/tag.png" },
+        	"Parking Village": { "lat": 44.547960, "lon": 6.607650, "icon": "images/tag-parking.png" },
+        	"Parking Station": { "lat": 44.546250, "lon": 6.607100, "icon": "images/tag-parking.png" }
+        };
 
         L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
             maxZoom: 18,
             attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>',
             id: 'mapbox/streets-v11'
-        }).addTo(mymap);
+        }).addTo(map);
+
+        for (var stake in stakes) {
+            var icon = L.icon({
+    			iconUrl: stakes[stake].icon,
+    			iconSize: [50, 50],
+    			iconAnchor: [25, 50],
+    			popupAnchor: [0, -50],
+    		});
+    		var marker = L.marker([stakes[stake].lat, stakes[stake].lon], { icon: icon }).addTo(map);
+            marker.bindPopup(stake);
+    	}
+
     }
 
     reInit() {

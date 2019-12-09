@@ -12777,7 +12777,7 @@ a:hover {
   right: 0px;
   bottom: 0px;
   position: absolute;
-  overflow-y: hidden;
+  overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
 }
@@ -12900,7 +12900,7 @@ a:hover {
           transform: translate3d(0, 0, 0);
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
-  background-image: url(/images/carousel_02.jpg?65b123c409c7e01cce15e1817a0a53af);
+  background-image: url(/images/carousel_02.jpg?609536f7ff1e6996f3280500cfda550f);
 }
 
 .carousel-item:nth-child(3) {
@@ -12917,7 +12917,7 @@ a:hover {
           transform: translate3d(0, 0, 0);
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
-  background-image: url(/images/carousel_03.jpg?987634478029e6da46cdae32800c51cf);
+  background-image: url(/images/carousel_03.jpg?d056e053b27d2ca3914f4603359cb685);
 }
 
 .carousel-item:nth-child(4) {
@@ -12934,7 +12934,7 @@ a:hover {
           transform: translate3d(0, 0, 0);
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
-  background-image: url(/images/carousel_04.jpg?8f5baa7fa714aa6e7113c4e87b53064f);
+  background-image: url(/images/carousel_04.jpg?1d19f0d2e91d78ae341875583d145287);
 }
 
 .sidebar-inverse {
