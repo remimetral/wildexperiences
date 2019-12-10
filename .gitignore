@@ -5,6 +5,9 @@
 /node_modules
 /public/hot
 /public/storage
+/resources/assets/img/avatar
+/resources/assets/img/pack
+/resources/assets/psd
 /storage/*.key
 /vendor
 

@@ -12900,7 +12900,7 @@ a:hover {
           transform: translate3d(0, 0, 0);
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
-  background-image: url(/images/carousel_02.jpg?609536f7ff1e6996f3280500cfda550f);
+  background-image: url(/images/carousel_02.jpg?87fab3dce1c0d3e6ae9705aaa6f78828);
 }
 
 .carousel-item:nth-child(3) {
@@ -12917,7 +12917,7 @@ a:hover {
           transform: translate3d(0, 0, 0);
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
-  background-image: url(/images/carousel_03.jpg?d056e053b27d2ca3914f4603359cb685);
+  background-image: url(/images/carousel_03.jpg?fa96ecffd7c74c8713227119c2b6cf80);
 }
 
 .carousel-item:nth-child(4) {
@@ -13613,7 +13613,7 @@ a:hover {
 }
 
 .container_page.activities .content .winter .cover {
-  background-image: url(/images/winter.jpg?bfe8242bbbac51764ccd59d7ff809721);
+  background-image: url(/images/winter.jpg?b9670e3e617dd05d7f200ac4ba8049fe);
   border-right: 1px solid white;
   margin-left: 50%;
 }
