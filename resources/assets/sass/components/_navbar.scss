@@ -28,11 +28,11 @@
     transition: width 250ms;
     //border-right: solid 2px black;
 
-    -moz-box-shadow: 1px 0px 10px 0px #656565;
-    -webkit-box-shadow: 1px 0px 10px 0px #656565;
-    -o-box-shadow: 1px 0px 10px 0px #656565;
-    box-shadow: 1px 0px 10px 0px #656565;
-    filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=90, Strength=10);
+    -moz-box-shadow: 1px 0px 5px 0px #cccccc;
+    -webkit-box-shadow: 1px 0px 5px 0px #cccccc;
+    -o-box-shadow: 1px 0px 5px 0px #cccccc;
+    box-shadow: 1px 0px 5px 0px #cccccc;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#cccccc, Direction=90, Strength=5);
 
     .navbar {
         width: 100%;

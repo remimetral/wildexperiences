@@ -12,11 +12,15 @@
 
 	<!-- Style -->
 	<!--<link href="{{ asset('vendor/tcg/voyager/assets/css/app.css') }}" rel="stylesheet" type="text/css">-->
+	<link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
 	<link href="{{ mix('css/app.css') }}" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 	<!-- Fonts -->
 	<!--<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>-->
+
+	<!-- Favicon -->
+	@include('layouts.favicon')
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
