@@ -13,13 +13,13 @@ return [
 	|
 	*/
 
-	'description' => 'Description',
+	'description' => 'Venez vivre une experience unique et intense avec les chiens de traîneau, dans un cadre hors du temps et en toutes saisons.',
 	'title' => [
-        'home' 			=> 'Accueil - Wild Experiences',
-        'activities'   	=> 'Activités - Wild Experiences',
-		'pack'   		=> 'Meute - Wild Experiences',
-		'calendar'   	=> 'Calendrier - Wild Experiences',
-		'location'   	=> 'Plan - Wild Experiences',
+        'home' 			=> 'Wild Experiences: Accueil',
+        'activities'   	=> 'Wild Experiences: Les Activités',
+		'pack'   		=> 'Wild Experiences: La Meute',
+		'calendar'   	=> 'Wild Experiences: Nos Disponibilités',
+		'location'   	=> 'Wild Experiences: Où Nous Trouvez',
         'login'  		=> 'Login',
 		'reset'			=> 'Reset',
         'register'		=> 'Register'

@@ -1,2 +1,3 @@
+Sitemap: http://wildexperiences/sitemap.xml
 User-agent: *
 Disallow:

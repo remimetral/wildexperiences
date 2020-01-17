@@ -13,13 +13,13 @@ return [
 	|
 	*/
 
-	'description' => 'Description',
+	'description' => 'Come and live a unique and intense experience with sled dogs, in a timeless setting and in all seasons.',
 	'title' => [
-        'home' 			=> 'Home - Wild Experiences',
-        'activities'   	=> 'Activities - Wild Experiences',
-		'pack'   		=> 'Pack - Wild Experiences',
-		'calendar'   	=> 'Calendar - Wild Experiences',
-		'location'   	=> 'Location - Wild Experiences',
+        'home' 			=> 'Wild Experiences: Home',
+        'activities'   	=> 'Wild Experiences: Activities',
+		'pack'   		=> 'Wild Experiences: Pack',
+		'calendar'   	=> 'Wild Experiences: Calendar',
+		'location'   	=> 'Wild Experiences: Location',
         'login'  		=> 'Login',
 		'reset'			=> 'Reset',
         'register'		=> 'Register'
